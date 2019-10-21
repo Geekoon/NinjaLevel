@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"runtime"
 )
 
 var x int = 42
@@ -26,4 +27,6 @@ func main() {
 	r = int(a)
 	fmt.Println("The meaning of r is", r)
 	fmt.Printf("%T\n", r)
+	fmt.Println(runtime.GOOS)
+	fmt.Println(runtime.GOARCH)
 }
