@@ -18,4 +18,8 @@ func main() {
 	fmt.Printf("%#x\n", a)
 	fmt.Println(utc)
 	fmt.Println(tc)
+	b := a << 1
+	fmt.Printf("%b\n", b)
+	fmt.Printf("%d\n", b)
+	fmt.Printf("%#x\n", b)
 }
