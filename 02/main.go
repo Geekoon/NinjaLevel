@@ -9,6 +9,14 @@ const (
 	tc int = 23
 )
 
+const (
+	_ = (iota + 2019)
+	n1
+	n2
+	n3
+	n4
+)
+
 var a int
 
 func main() {
@@ -22,4 +30,12 @@ func main() {
 	fmt.Printf("%b\n", b)
 	fmt.Printf("%d\n", b)
 	fmt.Printf("%#x\n", b)
+	s := `dskjfn  sdf "dsfsdf" 
+			sdf sdf sssdf 23r 23r df
+fds f230u `
+	fmt.Println(s)
+	fmt.Println(n1)
+	fmt.Println(n2)
+	fmt.Println(n3)
+	fmt.Println(n4)
 }
